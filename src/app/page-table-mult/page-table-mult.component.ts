@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class PageTableMultComponent {
 
+  n: number = 2;
+
+  updateN(event: Event) {
+    const inputElement = event.target as HTMLInputElement;
+    this.n = +inputElement.value;
+  }
+
 }
