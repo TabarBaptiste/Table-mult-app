@@ -1,7 +1,8 @@
 <div class="box center-div">
-    <ul class="align-left">
-        <li>Table de : {{n}}</li>
-        <li> <pre>---------</pre> </li>
+  <ul class="align-left">
+      <h3>Table de : {{n}}</h3>
+
+      <div class="table-multi">
         <li *ngFor="let item of [].constructor(10); let i = index">
           <span class="nmulti">{{n}}</span>
           <span>&nbsp;&nbsp;x </span>
@@ -9,5 +10,6 @@
           <span> = </span>
           <span>{{n*(i+1)}}</span>
         </li>
-    </ul>
+      </div>
+  </ul>
 </div>

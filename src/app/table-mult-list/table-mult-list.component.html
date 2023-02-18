@@ -1,0 +1,19 @@
+<div class="table-mult-list">
+  <h2>Tables de multiplication</h2>
+
+  <div class="table-number">
+    <label for="numberOfTables">Nombre de tables:</label>
+    <input id="numberOfTables" [(ngModel)]="numberOfTables" type="number" (input)="updateNumberOfTables($event)">
+  </div>
+
+  <div class="tables-container">
+    <div *ngFor="let n of numbers.slice(0, numberOfTables)" class="table-container">
+      <h3>Table de {{n}}</h3>
+      <ul>
+        <li *ngFor="let i of range(1, 10)">
+          {{n}} x {{i}} = {{n * i}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
