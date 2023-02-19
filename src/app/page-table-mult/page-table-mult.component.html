@@ -1,5 +1,5 @@
 <div class="box">
-  <label for="nInput">Entrez une valeur de n :</label>
-  <input type="number" id="nInput" [(ngModel)]="n" (input)="updateN($event)">
+  <label for="nInput">Entrez valeur table: </label>
+  <input type="number" id="nInput" [(ngModel)]="n" (input)="updateN($event)" class="small-input">
   <app-table-multiplication [n]="n"></app-table-multiplication>
 </div>

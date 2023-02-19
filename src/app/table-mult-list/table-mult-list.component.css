@@ -1,17 +1,26 @@
+.tables-container {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .table-container {
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 10px;
   text-align: center;
-  margin: 2% 2%;
-  display: inline-block;
+  margin: 1%;
   width: 45%;
   background-color: rgba(0, 255, 255, 0.4);
+  box-shadow: 3px 2px 5px #888888;
+
 }
 
 .table-container h3 {
   margin: 1;
 }
+
 h2 {
   margin-top: 4%;
   text-align: center;
@@ -24,5 +33,30 @@ h2 {
 
 .table-number{
   text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+@media (max-width: 768px) {
+  .table-container {
+    width: 40%;
+  }
+}
+
+.small-input {
+  box-shadow: 3px 2px 5px #888888;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 9%;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 5px;
+  font-size: 1.2em;
+  font-family: 'Open Sans', sans-serif;
 
 }
