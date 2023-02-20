@@ -10,6 +10,7 @@ import { PageTableMultComponent } from './page-table-mult/page-table-mult.compon
 import { FooterComponent } from './component/footer/footer.component';
 import { TableMultiplicationComponent } from './component/table-multiplication/table-multiplication.component';
 import { TableMultListComponent } from './table-mult-list/table-mult-list.component';
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { TableMultListComponent } from './table-mult-list/table-mult-list.compon
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
