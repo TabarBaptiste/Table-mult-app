@@ -13,8 +13,10 @@ Root --> Header
 Root --> Router
 Root --> Footer
 Router --> PageTableMult
+Router --> PageTablesDesMult
 
 PageTableMult -->"1  " TableMult
+PageTablesDesMult -->"1..*  " TableMult
 
 hide circle
 hide method
