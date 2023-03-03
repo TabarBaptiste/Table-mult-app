@@ -14,7 +14,10 @@
   width: 45%;
   background-color: rgba(0, 255, 255, 0.4);
   box-shadow: 3px 2px 5px #888888;
-
+}
+.table-container:hover {
+  box-shadow: none;
+  transition: 0.3s;
 }
 
 .table-container h3 {
