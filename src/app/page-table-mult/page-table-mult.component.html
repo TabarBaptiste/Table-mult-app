@@ -1,5 +1,10 @@
 <div class="box">
+  <!-- Label pour le champ de saisie du nombre -->
   <label for="nInput">Entrez valeur table: </label>
+
+  <!-- Champ de saisie du nombre avec liaison de données à la variable 'n' -->
   <input type="number" id="nInput" [(ngModel)]="n" (input)="updateN($event)" class="small-input">
+
+  <!-- Composant table-multiplication avec l'entrée 'n' liée à la variable 'n' du composant parent -->
   <app-table-multiplication [n]="n"></app-table-multiplication>
 </div>

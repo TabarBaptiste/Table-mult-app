@@ -1,15 +1,24 @@
+<!-- Le composant affichant la table de multiplication -->
 <div class="box center-div">
   <ul class="align-left">
 
+    <!-- Le container pour la table -->
     <div class="table-multi">
+      <!-- Le titre de la table -->
       <h3>Table de : {{n}}</h3>
+        <!-- Boucle pour chaque élément de la table -->
         <li *ngFor="let item of [].constructor(10); let i = index">
+          <!-- Le multiplicateur -->
           <span class="nmulti">{{n}}</span>
+          <!-- Symbole de multiplication -->
           <span>&nbsp;&nbsp;x </span>
+          <!-- Le multiplicande -->
           <span>{{i+1}}</span>
+          <!-- Symbole d'égalité -->
           <span> = </span>
+          <!-- Le résultat de la multiplication -->
           <span>{{n*(i+1)}}</span>
         </li>
-      </div>
+    </div>
   </ul>
 </div>
